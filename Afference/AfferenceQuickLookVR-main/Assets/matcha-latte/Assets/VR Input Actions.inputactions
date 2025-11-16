@@ -1,0 +1,34 @@
+{
+    "name": "VR Input Actions",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "a5fa3e64-f304-4318-ae2d-82050059a51b",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "567462b1-b13f-4f0f-8558-6f96a99ffdd8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e246656c-75ed-4002-ae82-37f2dd574ce0",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

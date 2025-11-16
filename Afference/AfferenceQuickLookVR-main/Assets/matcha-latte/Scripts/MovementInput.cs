@@ -52,8 +52,8 @@ public class UdpVrLocomotion : MonoBehaviour
         smoothedX = Mathf.Lerp(smoothedX, x, 1f - smoothing);
         smoothedZ = Mathf.Lerp(smoothedZ, z, 1f - smoothing);
 
-        if (logInput)
-            Debug.Log($"EMG Input: X={smoothedX:F3}, Z={smoothedZ:F3}");
+        //if (logInput)
+            //Debug.Log($"EMG Input: X={smoothedX:F3}, Z={smoothedZ:F3}");
 
         // Calculate movement direction based on head forward/right
         Vector3 forward = new Vector3(head.forward.x, 0, head.forward.z).normalized;

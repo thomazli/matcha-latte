@@ -7,6 +7,9 @@ public class CollisionTrigger : MonoBehaviour
 
     private float lastPulseTime = 0f;
 
+    [Header("Painting")]
+    public Material paintedMaterial;  // assign in Inspector
+
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("HapticSurface"))
@@ -21,6 +24,13 @@ public class CollisionTrigger : MonoBehaviour
 
                 lastPulseTime = Time.time;
             }
+
+            // paint full material
+            Renderer r = other.GetComponent<Renderer>();
+            if (r != null && paintedMaterial != null)
+            {
+                r.material = paintedMaterial;
+            }
         }
-    }
+    } 
 }
